@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'JACE'
+        title: ''
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -29,8 +29,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Another Code Editor',
-        short_name: 'JACE',
+        name: 'code-editor',
+        short_name: 'code-editor',
         description: 'Functions like your everyday code editor!',
         theme_color: '#225ca3',
         start_url: '/',
